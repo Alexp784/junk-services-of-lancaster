@@ -3,6 +3,7 @@ name: Deploy React + Tailwind
 on:
   push:
     branches: [ "main" ]
+    
 
 permissions:
   contents: read
