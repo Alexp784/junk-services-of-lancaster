@@ -66,15 +66,10 @@ const ServicesSection = () => (
             </div>
             <div className="space-y-4">
               {cat.services.map((s) => (
-                <div key={s.name} className="flex items-start justify-between gap-4 pb-4 border-b border-border last:border-0 last:pb-0">
-                  <div>
-                    <h4 className="font-semibold text-foreground text-sm">{s.name}</h4>
-                    <p className="text-muted-foreground text-sm font-body">{s.desc}</p>
-                  </div>
-                  <button onClick={scrollToEstimate} className="text-accent text-sm font-semibold hover:underline whitespace-nowrap mt-1">
-                    Get Estimate →
-                  </button>
-                </div>
+                <div key={s.name} className="pb-4 border-b border-border last:border-0 last:pb-0">
+                     <h4 className="font-semibold text-foreground text-sm">{s.name}</h4>
+                     <p className="text-muted-foreground text-sm font-body">{s.desc}</p>
+                 </div>
               ))}
             </div>
           </div>
